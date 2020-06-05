@@ -10,7 +10,6 @@ const ProfileGithub = ({ username, getGithubRepos, repos }) => {
   }, [getGithubRepos]);
   return (
     <div className='profile-github'>
-      {repos.length === 0 ? 'No profile found' : `found ${repos.length} repos`}
       <h2 className='text-primary my-1'>Github Repos</h2>
       {repos.length === 0 ? (
         <Spinner />
