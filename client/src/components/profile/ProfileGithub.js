@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import { getGithubRepos } from '../../actions/profile';
+import { v4 } from 'uuid';
 
 const ProfileGithub = ({ username, getGithubRepos, repos }) => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const ProfileGithub = ({ username, getGithubRepos, repos }) => {
         <Spinner />
       ) : (
         repos.map((repo) => (
-          <div key={repo._id} className='repo bg-white p-1 my-1'>
+          <div key={v4()} className='repo bg-white p-1 my-1'>
             <div>
               <h4>
                 <a
