@@ -9,9 +9,39 @@ const ProfileGithub = ({ username, getGithubRepos, repos }) => {
     getGithubRepos(username);
   }, [getGithubRepos]);
   return (
-    <div>
-      From Github {username}{' '}
+    <div className='profile-github'>
       {repos.length === 0 ? 'No profile found' : `found ${repos.length} repos`}
+      <h2 className='text-primary my-1'>Github Repos</h2>
+      {repos.length === 0 ? (
+        <Spinner />
+      ) : (
+        repos.map((repo) => (
+          <div key={repo._id} className='repo bg-white p-1 my-1'>
+            <div>
+              <h4>
+                <a
+                  href={repo.html_url}
+                  target='_blank'
+                  rel='noopener noreferrer'>
+                  {repo.name}
+                </a>
+              </h4>
+              <p>{repo.description}</p>
+            </div>
+            <div>
+              <ul>
+                <li className='badge badge-primary'>
+                  Stars: {repo.stargazers_count}
+                </li>
+                <li className='badge badge-dark'>
+                  watchers: {repo.watchers_count}
+                </li>
+                <li className='badge badge-light'>forks: {repo.forks_count}</li>
+              </ul>
+            </div>
+          </div>
+        ))
+      )}
     </div>
   );
 };
