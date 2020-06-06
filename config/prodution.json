@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://dustymccord:dustymccord@devconnector-mwo0k.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "0a706cbbfd81d57dabe6",
+  "githubSecret": "0785a547a44136d5e5cb345a6a6693c44b576fa0"
+}
