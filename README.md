@@ -7,7 +7,7 @@ _[MERN Stack Front To Back: Full Stack React, Redux & Node.js](https://www.udemy
 
 #### By Dusty McCord
 
-(Demo Site)[https://devconnect-react.herokuapp.com/]
+[Demo Site](https://devconnect-react.herokuapp.com/)
 
 ## Breif
 
