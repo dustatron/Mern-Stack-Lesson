@@ -7,6 +7,14 @@ _[MERN Stack Front To Back: Full Stack React, Redux & Node.js](https://www.udemy
 
 #### By Dusty McCord
 
+(Demo Site)[https://devconnect-react.herokuapp.com/]
+
+## Breif
+
+This project is a simple social network for developers. It uses express to create an API backend and MongoDB altas as the noSQL provider.
+
+React and Redux are used along with Json web tokens for authentication.
+
 ## Install This Poject
 
 ### To Clone and Run this project:
